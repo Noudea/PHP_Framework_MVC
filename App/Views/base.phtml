@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <base href="http://127.0.0.1/e3wa/" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' />
+    <link rel="stylesheet" href="public/css/normalize.css">
+    <link rel="stylesheet" href="<?php echo getenv('MYSITE_URL'); ?>public/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a title="retour à l'acceuil" href="<?php echo getenv('MYSITE_URL'); ?>home">Home</a>
+            <a title="voir mes projets" href="<?php echo getenv('MYSITE_URL'); ?>projets">Mes Projets</a>
+        </nav>
+    </header>
+    <?php include $view ?>
+</body>
+
+</html>

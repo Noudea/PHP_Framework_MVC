@@ -1,0 +1,18 @@
+<main id="notePad" class="notePad">
+    <section>
+        <div>
+            <a href="add"><i class="fas fa-plus-circle"></i></a>
+        </div>
+        <?php foreach ($note as $value) : ?>
+        <article class="note">
+            <div class="circle"></div>
+            <div class="titleLink">
+                <h2><?= $value['noteTitle'] ?> </h2>
+                <a title="voir la note" href="note?noteId=<?= $value['id'] ?>"> view </a>
+                <a title="supprimer la note" href="delete?noteId=<?= $value['id'] ?>"> <i class="fas fa-trash"></i> </a>
+                <a title="modifier la note" href="edit?noteId=<?= $value['id'] ?>"> <i class="fas fa-pen"></i> </a>
+            </div>
+        </article>
+        <?php endforeach; ?>
+    </section>
+</main>

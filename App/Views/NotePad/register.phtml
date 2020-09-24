@@ -1,0 +1,27 @@
+<main id="notePad">
+    <section class="formContainer">
+        <div class=iconContainer>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <form  method="post">
+            <div class="registerForm">
+                <label for="userName">Username</label>
+                <input type="text" name="userName" id="userName" required>
+                <p><?php echo $userNameMessage ?></p>
+            </div>
+            <div class="registerForm">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+                <p><?php echo $emailMessage ?></p>
+            </div>
+            <div class="registerForm">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <p><?php echo $passwordMessage ?></p>
+            </div>
+            <div class="submit">
+                <button type="submit" name="submit">Register</button>
+            </div>
+        </form>
+    </section>
+</main>

@@ -1,0 +1,20 @@
+
+
+ce site est un petit portfolio avec plusieurs projets en js et php.
+j'ai moi même developper un petit framework pour ce projet.
+
+framework :
+-fichier config dans FrameworkMVC/App
+-fichier sql dans racine FrameworkMVC
+-archtecture MVC : gestion des vues,controllers et modeles.
+-namespace et autoloader
+-possibilité de creer des classes dans services.
+security : gere la sécurité : verifie si utilisateur est logger et que c'est bien lui, protege contre les attaques XSS, gestion des mots de passes, gestion des parametres de login(exemple: 1 majuscule et 1 chiffres dans mdp).
+-dossier public : CSS/JS/ressources(img,font).
+
+liste des projets : 
+-money converter : un convertisseur de monaie, utilisant l'api de blockchain.info
+-happy message generateur : cliquer pour afficher un message et changer la couleur du fond, animation de texte.
+-MeteoApp: application meteo utilisant l'api de https://openweathermap.org/api et l'api de https://pixabay.com/api/docs/ . Attention ne pas modifier le html, certains espaces ou sauts à la ligne dans et entre les divs créer des childnodes vident.
+-notePad : un site de prise de note. avec CRUD et login.
+

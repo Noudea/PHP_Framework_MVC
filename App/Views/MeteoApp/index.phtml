@@ -1,0 +1,23 @@
+
+
+<!-- NE PAS TOUCHER AU CODE HTML,CERTAINS RETOUR A LA LIGNE OU ESPACE PEUVENT CREER DES CHILNODES VIDENT -->
+
+<main id="MeteoApp" class="meteoApp">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css' />
+
+    <div id="gradiant" class="gradientContainer gradiant1">
+        <div id="imageContainer"></div>
+        <div id="current" class="current"><form id="formName" method="post" onsubmit="return check(event)">
+                <input type="text" name="city" id="cityName" placeholder="Ville"><i class="fa fa-search"
+                    aria-hidden="true"></i>
+                </input>
+                <!-- <button type="submit">Submit</button> -->
+            </form></div>
+        <p id="error"></p>
+        <div id="forecast"></div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/luxon/1.24.1/luxon.min.js'></script>
+    <script type="text/javascript" src="./public/js/MeteoApp/apiCall.js"></script>
+    <script type="text/javascript" src="./public/js/MeteoApp/view.js"></script>
+    <script type="text/javascript" src="./public/js/MeteoApp/script.js"></script>
+</main>
